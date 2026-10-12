@@ -1,22 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <title>Damani's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Damani Howell | Builder turned developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-  <h1>Damani Howell's Portfolio</h1>
-    <h2>I've hardly done much here</h2>
-   <hr>
-     <h3><a href="./public/Movie list/Movie-ranking.html">Movie Ranking Project</a></h3>
-       <img src="./assets/images/Movie Rank.png" height="450" alt="Screenshot of Movie Ranking Project"/>          
-    <h3><a href="./public/Birthday Invite/Birthday-invite.html">Birthday Invite Project</a></h3>
-       <img src="./assets/images/Bday invite.png" height="450" alt="Screenshot of Birthday Invite Project"/>                  
-    <hr>
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact </a>
+  <nav class="site-nav" aria-label="Main">
+    <div class="wrap">
+      <a class="brand" href="./index.html">Damani<span>.</span>Howell</a>
+      <ul>
+        <li><a href="./index.html" aria-current="page">Home</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./public/about.html">About</a></li>
+        <li><a href="./public/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <header class="hero">
+      <div class="wrap">
+        <h1>Builder turned <em>developer.</em></h1>
+        <p>Quantity surveyor and civil engineering graduate, now building for the web with the same precision I bring to a cost plan.</p>
+        <a class="btn" href="#projects">See my work</a><a class="btn alt" href="./public/contact.html">Get in touch</a>
+      </div>
+    </header>
+    <section class="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h">From site to source code</h2>
+        <div class="skills-grid">
+          <div class="skill"><b>Measurement &amp; BoQs <span class="arrow">&rarr;</span> Clean structure</b>Breaking big jobs into precise, well-ordered parts.</div>
+          <div class="skill"><b>Cost planning <span class="arrow">&rarr;</span> Scoping</b>Clear scope, sensible trade-offs, measurable outcomes.</div>
+          <div class="skill"><b>Project delivery <span class="arrow">&rarr;</span> Shipping</b>Delivering reliably under time pressure.</div>
+          <div class="skill"><b>Logistics &amp; ops <span class="arrow">&rarr;</span> Teamwork &amp; Git</b>Keeping complex processes moving together.</div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" aria-labelledby="proj-h">
+      <div class="wrap">
+        <h2 id="proj-h">Projects</h2>
+        <div class="cards">
+          <a class="card" href="./public/movie-list/movie-ranking.html">
+            <img src="./assets/images/movie-ranking.png" alt="Screenshot of the Movie Ranking project">
+            <div><h3>Movie Ranking</h3><p>My all-time top 5 films, built with semantic HTML.</p></div>
+          </a>
+          <a class="card" href="./public/birthday-invite/birthday-invite.html">
+            <img src="./assets/images/birthday-invite.png" alt="Screenshot of the Birthday Invite project">
+            <div><h3>Birthday Invite</h3><p>A party invite page with images, lists and a map link.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Damani Howell. Built by hand with HTML &amp; CSS.</span>
+      <span><a href="mailto:d.howell787@live.co.uk">Email</a> &middot; <a href="https://github.com/Sm0k3y-Be4r">GitHub</a></span>
+    </div>
+  </footer>
 </body>
-
 </html>
